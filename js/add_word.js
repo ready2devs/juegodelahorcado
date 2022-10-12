@@ -4,41 +4,31 @@ var buttonSalvar = document.querySelector("#button-salvar");
 
 var Regex = /^[aA-zZ\s]+$/;
 
+buttonSalvar.addEventListener("click", function () {
+  var value = text.value;
 
-buttonSalvar.addEventListener("click",function(){
- 	var value = text.value;
+  if (Regex.test(value) == true) {
+    var newWord = value.toUpperCase();
 
-	if(Regex.test(value) == true){
-		var newWord = value.toUpperCase();
-
-		sessionStorage.setItem("addedWord", newWord);
-		window.location.href = "game.html";
-	}
-
-	else{
-		alert();
-		
-	}
-
+    sessionStorage.setItem("addedWord", newWord);
+    window.location.href = "game.html";
+  } else {
+    alert();
+  }
 });
 
-function alert(){
-	var value = text.value;
+function alert() {
+  var value = text.value;
 
-	var alertError = document.querySelector("#mensagem-erro");
+  var alertError = document.querySelector("#mensagem-erro");
 
-	alertError.textContent = "Texto Inválido! Apenas letras sem acento";
+  alertError.textContent = "Texto Inválido! Solo letras sin acento";
 
-	if(value == ""){
-		alertError.textContent = "Digite uma palavra";
+  if (value == "") {
+    alertError.textContent = "Digite una palabra";
+  }
 
-	}
-
-
-
-	text.addEventListener("input", function(){
-			alertError.innerHTML = "";
-
-	});	
+  text.addEventListener("input", function () {
+    alertError.innerHTML = "";
+  });
 }
-
