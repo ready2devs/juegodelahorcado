@@ -1,28 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media_query.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Orbitron&family=Raleway&family=Special+Elite&family=Uncial+Antiqua&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./css/fondo.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <title>Juego del Ahorcado</title>
   </head>
+  <body>
+    <header>
+      <h2 class="titulo-principal">Bienvenido al Juego del Ahorcado</h2>
+    </header>
+
+    <main>
+      <section class="section-buttons-home">
+        <a href="game.html">
+          <input
+            type="submit"
+            value="Iniciar juego"
+            class="button"
+            id="button-iniciar"
+          />
+        </a>
+        <a href="add_word.html">
+          <input
+            type="submit"
+            value="Nueva palabra"
+            class="button"
+            id="button-agregar-palabra"
+          />
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; Copyright-2022 LLS ready2devs</p>
+
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/luciano-leandro-sica-38b40615/"
+            ><img src="img/linkedin.png" class="link"
+          /></a>
+        </li>
+        <li>
+          <a href="https://github.com/ready2devs"
+            ><img src="img/github.png" class="link"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
