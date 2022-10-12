@@ -1,94 +1,81 @@
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
+  main {
+    width: auto;
+    height: auto;
+  }
 
+  .titulo-principal {
+    margin: 1em;
+    font-size: 40px;
+  }
 
-	main {
-		width: auto;
-		height: auto;
-	}
+  .button {
+    font-size: 25px;
+    width: 360px;
+  }
 
-	.titulo-principal {
-		margin: 1em;
-		font-size: 40px;
-	}
+  /* page add-word */
 
-	.button {
-		font-size: 25px;
-		width: 360px;
-	}
+  .adicionar-palavra {
+    align-items: center;
+  }
 
+  .area-texto {
+    display: flex;
+    flex-direction: column;
+  }
 
-	/* page add-word */
+  #mensagem-erro {
+    margin: 10px;
+  }
 
-	.adicionar-palavra{
-		align-items: center;
-	}
+  /* page game */
 
-	.area-texto{
-		display: flex;
-    	flex-direction: column;
-	}
+  .main-jogo {
+    width: 100%;
+  }
 
-	#mensagem-erro {
-		margin: 10px;
-	}
+  .regras {
+    font-size: 30px;
+  }
 
-	/* page game */
+  canvas {
+    width: 400px;
+  }
 
-	.main-jogo{
-		width: 100%;
+  .container-letras {
+    margin: 1em;
+    position: relative;
+    bottom: 50px;
+    font-size: 20px;
+  }
 
-	}
+  .letras {
+    width: 30px;
+    font-size: 20px;
+  }
 
-	.regras {
-		font-size: 30px;
-	}
+  .input {
+    bottom: 60px;
+    font-size: 16px;
+  }
 
-	canvas {
+  .display-letras-erradas {
+    bottom: 40px;
+    font-size: 20px;
+    width: 100%;
+  }
 
-		width: 400px;
-	}
+  .letras-erradas {
+    font-size: 30px;
+  }
 
-
-	.container-letras {
-		margin:1em;
-		position: relative;
-		bottom: 50px;
-		font-size: 20px;
-
-	}
-
-	.letras{
-		width: 30px;
-		font-size: 20px;
-	}
-
-	.input {
-		bottom: 60px;
-		font-size: 16px;
-	}
-
-	.display-letras-erradas {
-		bottom: 40px;
-		font-size: 20px;
-		width: 100%;
-	}
-
-	.letras-erradas {
-		font-size: 30px;
-	}
-
-	.buttons-pag-game{
-		top: 50px;
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	    width: 360px;
-	    gap: 10px;
-	}
-
+  .buttons-pag-game {
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    gap: 10px;
+  }
 }
-
-
-
-	
-	
