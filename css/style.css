@@ -7,6 +7,7 @@ body {
   justify-content: space-between;
   background-image: url(../img/blackboard.jpg);
   background-repeat: no-repeat;
+
   /* background-size: 3000px; */
 }
 
@@ -16,7 +17,7 @@ header {
 }
 
 .logo {
-  width: 60px;
+  width: 40px;
   margin: 10px;
   margin-left: 30px;
 }
